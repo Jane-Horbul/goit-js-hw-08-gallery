@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- В этот список добавляй элементы галереи -->
-    <ul class="gallery js-gallery" data-open-modal></ul>
+    <ul class="gallery js-gallery"></ul>
  
     <!--
       Модальное окно для полноразмерного изображения
@@ -18,10 +18,10 @@
 
 <!--my modal start-->
 
-<div class="backdrop lightbox js-lightbox" data-backdrop>
-  <div class="lightbox__content" data-backdrop>
-    <img src="" alt="" class="lightbox__image" data-open-modal>
-    <!--<img class="lightbox__image" src="" alt="" />-->
+<div class="lightbox js-lightbox">
+  <div class="lightbox__overlay"></div>
+  <div class="lightbox__content">
+    <img src="" alt="" class="lightbox__image">
   </div>
 
   <button

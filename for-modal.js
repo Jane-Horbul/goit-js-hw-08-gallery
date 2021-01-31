@@ -1,17 +1,16 @@
+
         const refs = {
-            openModalBtn: document.querySelector("[data-open-modal]"),
+            openModal: document.querySelector(".js-gallery"),
             closeModalBtn: document.querySelector("[data-close-modal]"),
-            backdrop: document.querySelector("[data-backdrop]"),
+
+            lightbox: document.querySelector('.lightbox'),
         };
-        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.openModal.addEventListener("click", toggleModal);
         refs.closeModalBtn.addEventListener("click", toggleModal);
 
-        refs.backdrop.addEventListener("click", logBackdropClick);
+
+        refs.lightbox.addEventListener("click", logLightboxClick);
 
         function toggleModal() {
-            refs.backdrop.classList.toggle("is-open");
-            console.log('hcdhasedhav');
-        }
-        function logBackdropClick() {
-            console.log("Click");
+            refs.lightbox.classList.toggle("is-open");
         }
