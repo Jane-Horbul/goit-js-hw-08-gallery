@@ -21,7 +21,7 @@ for (let el of galleryItems) document.querySelector('.js-gallery')
 
   const refs = {
 gallery: document.querySelector('.js-gallery'),
-largeImage: document.querySelector('.js-large-image')
+largeImage: document.querySelector('.lightbox__image')
   };
 
   refs.gallery.addEventListener('click', onGalleryClick);
@@ -36,7 +36,7 @@ largeImage: document.querySelector('.js-large-image')
       }
 
       const imageRef = event.target;
-const largeImageURL = imageRef.dataset.source;
+      const largeImageURL = imageRef.dataset.source;
 
       console.log(largeImageURL);
 
